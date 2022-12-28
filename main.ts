@@ -90,12 +90,14 @@ basic.forever(function () {
     if (mode == 1) {
         if (pins.digitalReadPin(DigitalPin.P15) == 0) {
             stop()
+            basic.pause(500)
             backwards()
             basic.pause(300)
             stop()
             lookAround()
         } else if (pins.digitalReadPin(DigitalPin.P12) == 0) {
             stop()
+            basic.pause(500)
             backwards()
             basic.pause(300)
             stop()
